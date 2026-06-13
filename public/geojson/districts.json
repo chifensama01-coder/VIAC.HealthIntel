@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "district": "Buea",
+        "name": "Buea",
+        "population": 89000,
+        "description": "Capital of the South West Region of Cameroon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [9.2, 4.12],
+            [9.28, 4.12],
+            [9.28, 4.19],
+            [9.2, 4.19],
+            [9.2, 4.12]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district": "Limbe",
+        "name": "Limbe",
+        "population": 74000,
+        "description": "Coastal city and oil terminal in Fako Division"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [9.17, 3.97],
+            [9.24, 3.97],
+            [9.24, 4.03],
+            [9.17, 4.03],
+            [9.17, 3.97]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district": "Bokwaongo",
+        "name": "Bokwaongo",
+        "population": 28000,
+        "description": "Sub-division east of Buea, Fako Division"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [9.255, 4.1],
+            [9.295, 4.1],
+            [9.295, 4.145],
+            [9.255, 4.145],
+            [9.255, 4.1]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "district": "Bwassa",
+        "name": "Bwassa",
+        "population": 21000,
+        "description": "Rural area between Buea and Limbe"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [9.16, 4.055],
+            [9.215, 4.055],
+            [9.215, 4.1],
+            [9.16, 4.1],
+            [9.16, 4.055]
+          ]
+        ]
+      }
+    }
+  ]
+}
