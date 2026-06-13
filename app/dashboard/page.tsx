@@ -8,6 +8,8 @@ import DigitalTraceWidget from '@/components/DigitalTraceWidget'
 import { DemographicFilterPanel } from '@/components/DemographicFilterPanel'
 import { AIInsightsPanel } from '@/components/dashboard/AIInsightsPanel'
 import { PlatformIntro } from '@/components/dashboard/PlatformIntro'
+import { WhyThisMatters } from '@/components/dashboard/WhyThisMatters'
+import { SiteFooter } from '@/components/SiteFooter'
 import type { DashboardData, Filters } from '@/lib/types'
 import { Filter, SlidersHorizontal, RefreshCw } from 'lucide-react'
 
@@ -97,6 +99,9 @@ export default function DashboardPage() {
             {/* Platform intro — explains what HealthIntel is */}
             <PlatformIntro totalCases={data.summary.totalCases || undefined} />
 
+            {/* Why this matters — value for decision-makers */}
+            <WhyThisMatters />
+
             {/* Top bar */}
             <div className="flex items-center justify-between">
               <div>
@@ -144,9 +149,7 @@ export default function DashboardPage() {
               <DigitalTraceWidget data={data.digitalTrace} loading={loading} />
             </div>
 
-            <footer className="pt-2 text-center text-xs text-muted-foreground">
-              HealthIntel · Vision in Action Cameroon · PAC Surveillance, Southwest Region
-            </footer>
+            <SiteFooter />
           </div>
         </div>
       </div>

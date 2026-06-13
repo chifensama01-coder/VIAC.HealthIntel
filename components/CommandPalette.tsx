@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import {
   LayoutDashboard, Map, Radio, TrendingUp, Target, Search as SearchIcon,
   FileText, MessageSquare, Users, Settings, User as UserIcon, Moon, Sun,
-  CornerDownLeft, MapPin, GitCompareArrows, ScrollText, Database, Bot,
+  CornerDownLeft, MapPin, GitCompareArrows, ScrollText, Database, Bot, Info, Lock,
 } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { DISTRICTS } from '@/lib/types'
@@ -54,6 +54,8 @@ export function CommandPaletteProvider({ children }: { children: ReactNode }) {
       { id: 'users', label: 'User Management', icon: Users, group: 'Navigate', run: go('/dashboard/users') },
       { id: 'settings', label: 'Platform Settings', icon: Settings, group: 'Navigate', run: go('/dashboard/settings') },
       { id: 'account', label: 'Account Settings', icon: UserIcon, group: 'Navigate', run: go('/dashboard/account') },
+      { id: 'about', label: 'About HealthIntel', icon: Info, group: 'Navigate', run: go('/dashboard/about'), keywords: 'mission contact organization' },
+      { id: 'privacy', label: 'Privacy & Data Governance', icon: Lock, group: 'Navigate', run: go('/dashboard/privacy'), keywords: 'security ethics data governance' },
     ]
     const districts: Command[] = DISTRICTS.map((d) => ({
       id: `district-${d}`, label: d, hint: 'District report', icon: MapPin, group: 'Districts',

@@ -22,6 +22,8 @@ const PAGE_LABELS: [string, string][] = [
   ['/dashboard/users', 'User Management'],
   ['/dashboard/settings', 'Platform Settings'],
   ['/dashboard/account', 'Account Settings'],
+  ['/dashboard/about', 'About HealthIntel'],
+  ['/dashboard/privacy', 'Privacy & Data Governance'],
   ['/dashboard', 'Overview Dashboard'],
 ]
 
