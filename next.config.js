@@ -3,9 +3,8 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['leaflet', 'react-leaflet'],
+  transpilePackages: ['leaflet'],
   outputFileTracingRoot: path.join(__dirname),
-  serverExternalPackages: [],
   // Custom headers for SSE support
   async headers() {
     return [
